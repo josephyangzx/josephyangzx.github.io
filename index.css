@@ -1,13 +1,22 @@
+
+
+.container {
+	font-family: 'Nunito';
+	font-size: 110%;
+}
+
 .jumbotron {
 	background: url(https://www.surrey.ac.uk/sites/default/files/styles/banner_image_1500x330/public/2018-02/research-top-banner.jpg?itok=I_BQuH42);
 	background-size: cover;
-	background-position: center top;
-	font-family: 'Nunito';
 	background-repeat: no-repeat;
+	text-align: center;
+	font-family: 'Nunito';
+	margin: 0 auto;
 }
 
 #jumbotron{
 	color: white;
+
 }
 
 .first {
@@ -15,7 +24,7 @@
 	margin: 2% 10%;
 }
 
-button{
-	font-size: 100%;
-	font-weight: bold;
+.navbar-jojo {
+	background-color: #1c355e;
 }
+
