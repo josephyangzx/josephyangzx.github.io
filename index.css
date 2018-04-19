@@ -11,7 +11,7 @@
 	background-repeat: no-repeat;
 	text-align: center;
 	font-family: 'Nunito';
-	margin: 0 auto;
+	margin: 0px 0px;
 }
 
 #jumbotron{
@@ -24,7 +24,7 @@
 	margin: 2% 10%;
 }
 
-.navbar-jojo {
-	background-color: #1c355e;
+.navbar-j{
+	margin:0;
 }
 
