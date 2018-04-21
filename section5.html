@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JOJO|AMME2960_S5</title>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="section5.css">
+</head>
+<body>
+
+
+	<!-- Creating a Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  		<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      	</button>
+      		<a class="navbar-brand" href="https://josephyangzx.github.io/">JOJO</a>
+    	</div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	      	<li><a href="index.html"> Home</a></li>
+	        <li><a href="amme2960.html"> AMME2960 </a></li>
+	      </ul>
+	     
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="about.html"> About</a></li>
+	        <li><a href="contact.html"> Contact</a></li>
+	        <li><a href="#">Sign Up <i class="fas fa-user-plus"> </i> </a></li>
+	        <li><a href="#">Login <i class="fas fa-user"></i> </a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+
+
+	<!-- This is the introduction for section 5 -->
+	<div class="container" id="firstCon">
+		<h1><strong>Section 5: </strong>The Wave Equation</h1>
+		<hr>
+		<div id="openning">
+		<div class="well">
+		<p> The backgorund image is taken from <a href="https://unsplash.com/photos/PuZeaoMB2A8">Unsplash</a>. It shows us that in nature, for instantce, the wave follows the behaviour of the wave equation. The simplest model of all is a string under tension. Using Newton's second law we can easily derive the wave equation.</p>
+		<p> In this section, there are three topics to be studied:
+			<li>
+				Derivation of the Wave Euqation
+			</li>
+			<li>
+				Solution by Fourier Series
+			</li>
+			<li>
+				Complex Initial Conditions
+			</li>
+		</p>
+		</div>
+		</div>
+	</div>
+
+
+
+	<!-- The main content starts here -->
+	<div class="main">
+	<!-- The first topic -->
+	<div class="container" id="firstTop">
+		<h2><strong>Derivation of the Wave Equation</strong></h2>
+		<p>This has been covered in last session; thus, we will not be disscussing thoroughly here.</p>
+		<p>
+			Just a quick reminder of the Wave Equation:
+
+			$$
+			\frac{\partial ^2 U}{\partial t^2 } = {c^2 } \frac{\partial^2 U}{\partial x^2} \qquad
+			\text{where} \qquad c^{2} = \frac{T}{\rho} 
+			$$
+			
+		</p>
+		<p> We have also disscussed that the class of the wave euqation is <strong>Hyperbolic</strong>.</p>
+	</div>
+
+	<!-- The second topic -->
+	<div class="container" id="secondTop">
+		<h2><strong>Solution by Fourier Series</strong></h2>
+		<p>
+			<strong>Q:</strong> It is given to us the following conditions. A standard Fender guitar string length is <strong>0.65m</strong> with a typical tension of <strong>71N</strong>. The typical mass/unit lenth of the first string is \(0.401\times10^{-3} kg/m\). 
+			
+			If I pull the string into a triangle shape:
+			<div id="image">
+			<img src="/Users/Joseph/Dropbox (Personal)/GitHubWeb/josephyangzx.github.io/webContent/section5/topic2_triangularShape.PNG">
+			</div>
+			
+			<p>
+			Which also satisfies the following conditions:
+			$$ f(x) =
+			\left\{ 
+			\begin{array}{c}
+			\frac{2k}{L}x & \text{if}& 0< x < \frac{L}{2} \\ 
+			\\
+			\frac{2k}{L}(L-x) & \text{if}& \frac{L}{2} < x < L
+			\end{array}
+			\right.
+			$$
+			</p>
+			<p>
+				Now we also need the Initial Conditions (<em>I.C.</em>) and Boundary Conditions (<em>B.C.</em>) to help us resolve the problem:
+				$$u(x,0) = f(x) \qquad u(0,t) =  0 \qquad u(L,t) = 0 $$
+				Remember, there is noe data you need tocalculate. That is the \(c^{2}\):
+				$$\rho = 0.401\times10^{-3} kg/m \qquad T = 71 N $$
+				$$
+				\Rightarrow c^{2} = \frac{T}{\rho} = 177057.3566 (m^{2}/s^{2})
+				$$
+			</p>
+
+			<p>It is now a good time to refresh the memory of <strong>How to Find the Solution to a PDE</strong>:
+				<ol>
+					<li>Define all of the parameters needed to solve the question;</li>
+					<li>Use <strong>Separation of Variables</strong> to separate the variables;</li>
+					<li>Solve the resulting ODE for F(x);</li>
+					<li>Solve the resulting ODE for G(t);</li>
+					<li>Full solution to the question.</li>
+				</ol>
+			</p>
+
+			<p>With the rules kept in mind, it is very easy for us to get started!</p>
+			<p>
+				We have successfully defined our parameters for soling the question. Thus, we move to the second step: <em>Separation of Variables</em>.
+			</p>
+
+
+			<h3><strong>Step 2:</strong> Separation of Variables</h3>
+
+			<ul> 
+				<li>
+			<p>
+				Assume a solution: \(T(x,t)=F(x)*G(t)\)
+			</p>
+			<p>
+				Subsititute this into the heat equation:
+				$$
+				FG_t - c^{2}GF_{xx} = 0
+				\\
+				\frac{G_t}{c^2G}=\frac{F_{xx}}{F}
+				\\
+				\text{Set the above expression to a constant} -p^{2}
+				\\
+				\Rightarrow \frac{G_t}{c^2G}=\frac{F_{xx}}{F} = -p^2
+				\\
+				\text{Now, we are able to find the solution for each ODE}
+				$$
+			</p>
+			</li>
+
+			<p>
+				Please note, the two ODEs are \(\frac{G_t}{c^2G}=-p^2\) and \(\frac{F_{xx}}{F}=-p^2\). 
+			</p>
+			<p>
+				
+			<li>
+				Thus, for the <strong>Spatial Term</strong> :
+				$$
+				F_n(x)=a_ncos{(px)}+b_nsin{(px)}
+				$$
+				We now are going back to the B.Cs, \(u(0,t)=0\) and \(u(L,t)=0\) which also means that \(F_n(0)=0\) at these points.
+				<p>
+					Hence, we can find out that \(a_n=0\) and \(p=\frac{n\pi}{L}\) where \(n=1,2,3,...\)
+				</p>
+				<p>
+					Thus, we have successully obtained the solution for \(F_n(x)\):
+					$$
+					F_n(x)=b_nsin{(\frac{n \pi x}{L})}
+					$$
+				</p>
+			</li>
+			<li>
+				For the <strong> Temporal Term</strong>:
+				$$
+				G_n(t)= B_ncos{(\lambda_nt)}+B^{*}_nsin{(\lambda_nt)}
+				\\\text{where} \qquad \lambda_n=\frac{cn\pi}{L} \qquad \& \qquad B_n,B^{*}_n \qquad \text{are constants}
+				$$
+				Thus, <strong>a</strong> solution to the current ICs and BCs becomes:
+				$$
+				u_n(x,t)=F_n(x)*G_n(t)= sin{(\frac{n \pi x}{L})}(B_ncos{(\lambda_nt)}+B^{*}_nsin{(\lambda_nt)})
+				$$
+				Note: the constant for \(F_n(x)\) has been combined into \(G_n(t)\).
+			</li>
+
+
+			<!-- In this section we will be disscussing the meanig of eigenfunction and eigenvalue -->
+			<li>
+				<strong>Eigenfunction and Eigenvalues:</strong>
+				<p><STRONG>Q:</STRONG>What is eigenfunction and eigenvalue?</p>
+				<p><strong>An:</strong></p>
+				<p>
+					<u>Mathematical definition:</u> an <em>eigenfunction</em> of an operator \(\hat{A}\) is a function \(f\) such that the application of \(\hat{A}\) on \(f\) gives \(f\) times a constant.
+					$$
+					\hat{A}f = kf
+					$$
+				</p>
+				<p>Let's decipher this together.</p>
+				<p>What is the definition actually saying? Let's use \(e\) as an example. As we all know, that the derivative of \(e\) is itself. That is:
+
+					$$
+					\text{if} \qquad f(x)=e^{2x} 
+					\\
+					\text{then} \qquad f'(x)=2e^{2x}
+					$$
+					Well, that seems to be pointless. But if we go back to the definition, we can see in our case of \(f(x)\). The operator, here, becomes <storng>1</storng>.Or \(\hat{A}=2\) \(\Rightarrow \hat{A}f(x)=2*f(x)\). 
+					<p>In another way saying this is:
+						$$
+						\text{if let} \qquad \lambda = 2 \Rightarrow f(x)=e^{\lambda x}
+						\\
+						\text{then} \qquad 2f(x)=\lambda f(x)
+						\\
+						$$
+						Thus, we say \(\lambda\) is the eigenvalue of the eignefunction \(f(x)=e^{\lambda x} = e^{2x}\).
+					</p>
+					<p>
+						Remember, you should never talk about an eigenvalue without refering back to your eigenfunciton. This is also somewhat different from eigenvector in matrix.
+					</p>
+				</p>
+			</li>
+			
+			</p>
+			</ul>
+
+		</p>
+	</div>
+
+	<!-- The third topic -->
+	<div class="container" id="thirdTop">
+		<h2><strong>Complex Initial Conditions</strong></h2>
+	</div>
+	</div>
+
+
+</body>
+</html>
