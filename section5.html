@@ -225,9 +225,64 @@
 						Thus, we say \(\lambda\) is the eigenvalue of the eignefunction \(f(x)=e^{\lambda x} = e^{2x}\).
 					</p>
 					<p>
-						Remember, you should never talk about an eigenvalue without refering back to your eigenfunciton. This is also somewhat different from eigenvector in matrix.
+						Remember, you should never talk about an eigenvalue without refering back to your eigenfunciton. <strong><u>The eigenvalues and the eigenfunctions are properties of the specific system.</u></strong> This is also somewhat different from eigenvector in matrix.
 					</p>
+					<p>
+						Thus, in our problem. We say "solution \(u_n\) is an <strong>eigenfunction</strong> of the problem, correpsonding to the <strong>eigenvalue</strong> \(\lambda _n\)".
+					</p>
+					<p>
+						In this particular case, we can now have more definitions upon the mode n:
+					</p>
+					<P>
+						<ul>
+							<li>n=1 mode is called the <em>fundamental mode</em>.</li>
+							<li>Other modes are called <em>overstones</em> or <em>harmonics</em>.</li>
+							<li>Each mode has n nodes, where the string does not move.</li>
+							<li><strong>Frequency</strong> is: \(\frac{\lambda _n}{2 \pi} = \frac{cn}{2L} \) </li>
+						</ul>
+					</P>
 				</p>
+			</li>
+			
+			<li>
+			<STRONG>Full Solution:</STRONG>	
+			<p>As is the case from Heat Equation, <strong>all values of n are solutions</strong> to the euqation.</p>
+			<p>Thus the complete solution is a combination of all solutions:</p>
+			<p>
+				$$
+				u(x,t)=\sum^{\infty}_{n=1}=\sum^{\infty}_{n=1}(B_ncos{(\lambda_n t)}+B^{*}_nsin{(\lambda_nt)})sin{\frac{n\pi t}{L}}
+				$$
+			</p>
+			<p>Refering back to the initial conditions, that is \(u(x,0)=f(x)\) </p>
+
+				$$
+				u(x,0)=f(x)=\sum^{\infty}_{n=1}B_nsin{\frac{n\pi x}{L}}
+				$$
+			</p>
+			<p>The above equation has one coefficient \(B_n\). We call it the Fourier Series Coefficient. It can be solved using Euler's formula.</p>
+			<p>
+				Remember the definition of eigenfunction and eigenvalue? We now also need to keep this is mind: <strong>If the eigen value is not present the initial conditions, it will nver appear!</strong> 
+			</p>
+			<p>
+				Now, let's take a look at the derivative:
+				$$
+				\frac{\partial{u}}{\partial{t}} = \sum^{\infty}_{n=1}(-B_n\lambda_nsin{(\lambda_nt)}+B^*_n\lambda_ncos{(\lambda_nt)})sin{\frac{n\pi x}{L}}
+				$$
+				At \(t=0\):
+				$$
+				\frac{\partial{u}}{\partial{t}}|_{\scriptstyle{t=0}} =B_n^*\lambda_nsin{\frac{n\pi x}{L}}
+				$$
+				The first derivative reflects the velocity of the position. We know that at \(t=0\) this string is at stationary. Thus:
+				$$
+				\frac{\partial{u}}{\partial{t}}|_{\scriptstyle{t=0}}=0 \Rightarrow B_n^*=0 \quad \text{Since}\quad \sin(\frac{n\pi x}{L})\quad \text{is oscillating between 1 and 0.}
+				$$
+				Thus, the final siolution is now:
+				$$
+				u(x,t)=\sum^{\infty}_{n=1}B_ncos{(\lambda_n t)}sin{\frac{n\pi t}{L}}
+				$$
+			</p>
+
+
 			</li>
 			
 			</p>
