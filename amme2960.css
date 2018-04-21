@@ -1,8 +1,12 @@
 body{
 	font-family: Nunito;
 	font-size: 400;
-	margin-bottom: 10%;
+	margin-bottom: 2%;
 }
 .container#firstCon {
-	margin-top: 5%;
+	margin-top: 2%;
+}
+
+.jumbotron {
+	margin-bottom: 0%;
 }
