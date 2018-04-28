@@ -84,6 +84,95 @@
 
 
 
+	<!-- The main content starts here -->
+	<div class="main">
+
+		<!-- Section 1: Fourier Integral -->
+		<div class="container" id="firstTop">
+			<h2><strong><a id="one">Fourier Integral</a></strong></h2>
+			<p>
+				Some times, the problem presented may not have a finite domian, which means they can be either inifite or semi-infinite. Refer to this week's tutorial, the scenario was about the travel of the fragrance. Other examples from our daily life are the effect of earth quake into the soil; the soil temperature, etc. Further readings on Fourier Integrals please refer to Kreyszig Chapter 10.
+			</p>
+			<p>
+				Another reason for us to transform the problem is to help us to derive a solution. Sometimes, it is easier for us to manipulate the solution by using Fourier transformation and Laplace transformation. 
+			</p>
+			<h3>Fourier Integral</h3>
+			<p>
+				What is the difference between Fourier Series and Fourier Transform?
+				<p>
+					Look at the <strong>domains</strong>:
+					<ul>
+						<li>Finite domain -> Fourier Series;</li>
+						<li>Infinite/Semi-inifite domain -> Fourier/Laplace Transforms OR Integral Transform;</li>
+					</ul>
+				</p>
+				Let's first look back to the Fourier Series:
+
+				$$
+				\begin{align}
+				f(x) &= a_0 + \sum^{\infty}_{n=1}(a_n cos{w_nx} + b_n sin{w_n x}) \quad w_n =\frac{n\pi}{L}
+				\\
+				a_0 &= \frac{1}{2L} \int^{L}_{-L}f(x)dx
+				\\
+				a_n &= \frac{1}{L} \int^{L}_{-L}f(x) cos{\frac{n\pi x}{L}}dx \quad n = 1,2,3,...
+				\\
+				b_n &= \frac{1}{L} \int^{L}_{-L}f(x) sin{\frac{n\pi x}{L}}dx \quad n = 1,2,3,...
+				\end{align}
+				$$
+			</p>
+			<p>We can even further catagorize the Fourier Series into two groups:</p>
+			<p>
+				<ol>
+					<li>Even function</li>
+					<li>Odd function</li>
+				</ol>
+			</p>
+			<h3>Even function:</h3>
+			<p>
+				If the function is even, which means \(f(-x)=f(x)\). The Fourier Series coefficients beomce:
+				$$
+				\begin{align}
+				a_0 &= \frac{1}{2L} \int^{L}_{-L}f(x)dx
+				\\
+				a_n &= \frac{1}{L} \int^{L}_{-L}f(x) cos{\frac{n\pi x}{L}}dx \quad n = 1,2,3,...
+				\end{align}
+				$$
+				The term \(b_n\) is zero.
+			</p>
+			<h3>Odd function:</h3>
+			<p>
+				If the function is odd, which means \(f(-x) = -f(x)\). The Fourier Series coefficients become:
+				$$
+				\begin{align}
+				a_0 &= \frac{1}{2L} \int^{L}_{-L}f(x)dx
+				\\
+				b_n &= \frac{1}{L} \int^{L}_{-L}f(x) sin{\frac{n\pi x}{L}}dx \quad n = 1,2,3,...
+				\end{align}
+				$$
+				The term \(a_n\) is zero. 
+			</p>
+			<h3>The Error Function</h3>
+			<p>
+				More information on the error function can be found <a href="http://www.mhtlab.uwaterloo.ca/courses/me755/web_chap2.pdf">here</a>. One thing worth noting is that error function is close related to the normalized Gaussian Function. The error function is given as:
+				$$
+				erf(x) = \frac{2}{\pi}\int^{x}_{0}e^{-t^2}dt \quad \text{where} \quad t = \frac{x}{\sqrt{2}\sigma}
+				$$
+
+				In MATLAB, the error function is "erf(x)". Also, the error function is odd: \(erf(-x) = -erf(x)\).
+			</p>
+		</div>
+
+		<!-- Section 2: Fourier Integral Solution of the Heat Equation-->
+		<div class="container" id="secondTop">
+			<h2><strong><a id="two">Fourier Integral Solution of the Heat Equation</a></strong></h2>
+
+
+
+
+	</div>
+
+
+
 <!-- https://code.jquery.com/ -->
 <!-- This needs to be before the JAVA -->
 <script
