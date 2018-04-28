@@ -1,0 +1,13 @@
+body{
+	background-image: url(xxx);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center top;
+	font-family: Nunito;
+	font-size: 400;
+	margin-bottom: 2%;
+}
+
+.container#firstCon {
+	margin-top: 9%;
+}
