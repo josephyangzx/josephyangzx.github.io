@@ -327,7 +327,7 @@ img {
 
 #majors{
   width: auto;
-  height: 35rem;
+  height: 32rem;
   margin: 0 1rem;
 }
 
@@ -378,8 +378,8 @@ iframe{
     margin: 2rem 0rem;
   }
   iframe{
-    width: 420px ; 
-    height: 237px ;
+    width: 336px ; 
+    height: 189px ;
   }
 }
 
