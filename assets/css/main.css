@@ -3127,11 +3127,11 @@ input, select, textarea {
 		/* Basic */
 
 			h1 {
-				font-size: 1.5em;
+				font-size: 1.9em;
 			}
 
 			h2 {
-				font-size: 1.2em;
+				font-size: 1.7em;
 			}
 
 			h3 {
@@ -3145,7 +3145,7 @@ input, select, textarea {
 			}
 
 			header.major h2 {
-				font-size: 1.35em;
+				font-size: 1.6em;
 			}
 
 		/* List */
