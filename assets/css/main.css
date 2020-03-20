@@ -132,6 +132,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		font-size: 1.2em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -147,32 +148,32 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2em;
+		font-size: 2.5em;
 		line-height: 1.5em;
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2.0em;
 		line-height: 1.5em;
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.25em;
 		line-height: 1.5em;
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 1.0em;
 		line-height: 1.5em;
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 0.8em;
 		line-height: 1.5em;
 	}
 
@@ -1791,7 +1792,8 @@ input, select, textarea {
 	}
 
 	header.major h2 {
-		font-size: 2em;
+		font-size: 2.25em;
+		font-weight: bold;
 	}
 
 /* Form */
@@ -2133,6 +2135,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
 		.image.avatar {
 			border-radius: 100%;
 		}
@@ -2205,7 +2208,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				font-size: 1.5em;
+				font-size: 1.85em;
 			}
 
 /* Labeled Icons */
@@ -2562,13 +2565,14 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
+			font-size: 1.2em;
 			margin: 0 0 0.5em 0;
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 1.0em;
 			line-height: 1.5em;
+			text-align: justify;
 			margin: 0;
 		}
 
@@ -2859,7 +2863,7 @@ input, select, textarea {
 
 			.poptrox-popup .nav-next:before,
 			.poptrox-popup .nav-previous:before {
-				color: #fff;
+				color: #545353;
 				font-size: 2.5em;
 				height: 1em;
 				line-height: 1em;
@@ -2895,7 +2899,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-			color: #fff;
+			color: #545353;
 			height: 4em;
 			line-height: 4em;
 			opacity: 0;
@@ -2926,7 +2930,7 @@ input, select, textarea {
 				-ms-box-sizing: content-box;
 				box-sizing: content-box;
 				border-radius: 100%;
-				border: solid 3px rgba(255, 255, 255, 0.5);
+				border: solid 3px rgba(84, 83, 83, 0.5);
 				content: '\f00d';
 				display: block;
 				font-size: 1em;
